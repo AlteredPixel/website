@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "3000:3000"
+    volumes:
+      # Mount source for hot-reload, but keep container node_modules
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
