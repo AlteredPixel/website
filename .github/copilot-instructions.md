@@ -16,6 +16,16 @@ bun run format     # Prettier (printWidth 100, double quotes, trailing commas)
 
 No test suite is configured.
 
+### Running with Docker Compose
+
+```bash
+docker compose up          # Build and start the dev server at http://localhost:3000
+docker compose up --build  # Force a rebuild (after dependency changes)
+docker compose down        # Stop and remove the container
+```
+
+The `app` service mounts the source tree for hot-reload while keeping `node_modules` inside the container, so `bun install` does not need to run locally. Use this to launch or test the project without installing Bun on the host.
+
 ---
 
 ## Architecture
