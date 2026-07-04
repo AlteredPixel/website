@@ -74,18 +74,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#061B33" },
-      { title: "Altered Pixel — Logiciels sur-mesure, IA en entreprise & infra" },
+      { title: "Altered Pixel · L'informatique qui vous appartient" },
       {
         name: "description",
         content:
-          "Altered Pixel conçoit des logiciels sur-mesure boostés à l'IA, déploie et forme aux outils IA de dernière génération, et prend en charge votre parc informatique. Basés en France.",
+          "Altered Pixel développe vos logiciels, déploie votre IA sur vos données, infogère votre parc et forme vos équipes. Une informatique souveraine que vous maîtrisez, hébergée en France.",
       },
       { name: "author", content: "Altered Pixel" },
-      { property: "og:title", content: "Altered Pixel — L'IA qui travaille pour vous" },
+      { property: "og:title", content: "Altered Pixel · L'informatique qui vous appartient" },
       {
         property: "og:description",
         content:
-          "Logiciels sur-mesure boostés à l'IA, déploiement & formation IA, infogérance. Une équipe française, un pixel altéré.",
+          "Développement sur-mesure, IA souveraine, infogérance et formation. Votre technologie reste sous votre contrôle, en France.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
@@ -93,7 +93,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:title", content: "Altered Pixel" },
       {
         name: "twitter:description",
-        content: "Logiciels sur-mesure, IA en entreprise, infogérance.",
+        content: "Développement, IA souveraine, infogérance et formation. En France.",
       },
     ],
     links: [

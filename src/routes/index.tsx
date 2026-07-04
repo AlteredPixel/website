@@ -6,11 +6,11 @@ export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
-      { title: "Altered Pixel — L'IA qui travaille pour vous" },
+      { title: "Altered Pixel · L'informatique qui vous appartient" },
       {
         name: "description",
         content:
-          "Logiciels sur-mesure boostés à l'IA, déploiement & formation IA en entreprise, infogérance de votre parc informatique. Basés en France.",
+          "Développement sur-mesure, IA sur vos données, infogérance et formation. Une informatique souveraine que vous maîtrisez, hébergée en France. Nouvelle maison indépendante.",
       },
     ],
   }),
@@ -45,14 +45,14 @@ function Nav() {
         <nav className="hidden md:flex items-center gap-10 text-sm text-brume">
           <a href="#services" className="hover:text-papier transition-colors">Services</a>
           <a href="#approche" className="hover:text-papier transition-colors">Approche</a>
-          <a href="#manifeste" className="hover:text-papier transition-colors">Manifeste</a>
+          <a href="#manifeste" className="hover:text-papier transition-colors">Conviction</a>
           <a href="#contact" className="hover:text-papier transition-colors">Contact</a>
         </nav>
         <a
           href="#contact"
           className="inline-flex items-center gap-2 text-sm font-medium text-encre bg-cyan px-4 py-2.5 rounded-sm hover:opacity-90 transition-opacity"
         >
-          Parler à un humain
+          Nous contacter
           <span aria-hidden>→</span>
         </a>
       </div>
@@ -69,16 +69,17 @@ function Hero() {
     <section id="top" className="relative overflow-hidden">
       <div className="mx-auto max-w-[1360px] px-6 lg:px-10 pt-20 pb-32 lg:pt-32 lg:pb-40 grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7 ap-rise">
-          <p className="eyebrow mb-8">L'IA qui travaille pour vous · Édition 2026</p>
+          <p className="eyebrow mb-8">Souveraineté numérique · Nouvelle maison française</p>
           <h1 className="font-display font-bold text-[52px] leading-[1.02] sm:text-[68px] lg:text-[86px] tracking-[-0.02em] text-papier">
-            On code.<br />
-            On installe.<br />
-            <span className="text-cyan">On forme.</span>
+            Votre code.<br />
+            Vos données.<br />
+            <span className="text-cyan">Votre autonomie.</span>
           </h1>
           <p className="mt-10 max-w-[46ch] text-lg lg:text-xl leading-relaxed text-brume">
-            Altered Pixel construit des logiciels sur-mesure boostés à l'IA, déploie
-            les outils de dernière génération dans vos équipes et maintient votre
-            parc informatique — d'un même geste, sans jargon.
+            Altered Pixel développe vos logiciels, déploie votre IA sur vos
+            données, infogère votre parc et forme vos équipes. Une jeune maison
+            française avec une ligne claire : votre technologie vous appartient et
+            reste sous votre contrôle, du code aux données.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -104,14 +105,15 @@ function Hero() {
               lit={[8, 3]}
               seed={42}
               className="absolute inset-0 w-full h-full"
-              ariaLabel="Trame pixel altéré — signature Altered Pixel"
+              ariaLabel="Trame pixel altéré, signature Altered Pixel"
             />
           </div>
           <div className="mt-6 flex items-start gap-3 text-xs text-brume">
             <span className="mt-[6px] inline-block w-2 h-2 bg-cyan" />
             <p className="max-w-[36ch]">
-              Un seul pixel altéré par composition. Rarement centré. Toujours
-              intentionnel — comme le code qu'on écrit.
+              Dans chaque trame, un seul pixel s'illumine au milieu des autres.
+              C'est votre entreprise sur son marché : celle qu'on remarque. Notre
+              métier, bâtir la technologie qui la fait briller.
             </p>
           </div>
         </div>
@@ -127,10 +129,10 @@ function Hero() {
 
 function Proof() {
   const items = [
-    { k: "100%", v: "Code livré, documenté, à vous." },
-    { k: "48h", v: "Délai de première réponse, garanti." },
-    { k: "0", v: "Frais cachés. Devis clair, forfait ou régie." },
-    { k: "FR", v: "Équipe, hébergement, données. Basés en France." },
+    { k: "FR", v: "Équipe, hébergement et données en France." },
+    { k: "100%", v: "Code, accès et comptes à votre nom." },
+    { k: "48h", v: "Une réponse à chaque demande sous 48h." },
+    { k: "1", v: "Un interlocuteur unique, du devis à la maintenance." },
   ];
   return (
     <section className="bg-trame-2 border-y border-hairline">
@@ -158,28 +160,28 @@ function Services() {
       n: "01",
       lit: [6, 1] as [number, number],
       seed: 11,
-      title: "Logiciels sur-mesure, boostés à l'IA",
+      title: "Logiciels sur-mesure, renforcés par l'IA",
       desc:
-        "Web apps, back-offices, agents, automatisations. On conçoit, on développe et on met en production des produits qui font gagner du temps réel à vos équipes — LLMs, RAG, vision, orchestration : les briques IA sont intégrées là où elles rendent service, pas là où elles font joli.",
-      bullets: ["Discovery en 2 semaines", "Livraisons hebdomadaires", "Code source à vous"],
+        "Applications web, back-offices, agents, automatisations. Nous concevons et mettons en production des outils taillés pour votre métier. À la livraison, le code source, la documentation et les comptes sont à votre nom : vous restez libre de faire évoluer votre produit avec nous ou par vos propres moyens.",
+      bullets: ["Cadrage en 2 semaines", "Livraisons chaque semaine", "Code et accès à votre nom"],
     },
     {
       n: "02",
       lit: [7, 2] as [number, number],
       seed: 27,
-      title: "IA en entreprise · déploiement & formation",
+      title: "IA en entreprise : déploiement et formation",
       desc:
-        "On installe les outils IA de dernière génération (Copilot, Claude, ChatGPT Enterprise, agents internes) dans vos équipes, on définit la gouvernance, on forme les métiers — de la direction au terrain. Un cadre clair, des cas d'usage mesurables, une adoption qui tient.",
-      bullets: ["Cadrage & gouvernance", "Formations sur cas d'usage réels", "Suivi 3 / 6 / 12 mois"],
+        "Nous installons les outils d'IA de dernière génération (Copilot, Claude, ChatGPT Enterprise, agents internes ou modèles hébergés en France) dans vos équipes, sur vos données et selon votre gouvernance. Puis nous formons vos métiers, de la direction au terrain, pour une adoption durable et autonome.",
+      bullets: ["Modèles hébergeables en France", "Cadrage et gouvernance", "Formations sur vos cas d'usage"],
     },
     {
       n: "03",
       lit: [5, 3] as [number, number],
       seed: 63,
-      title: "Parc informatique · installation & maintenance",
+      title: "Parc informatique infogéré",
       desc:
-        "Postes, réseau, serveurs, sauvegardes, MDM, sécurité. On déploie, on documente, on infogère. Un interlocuteur unique, un SLA clair, aucune facture surprise. Vous appelez, ça répond — vous ne pensez plus à l'IT.",
-      bullets: ["Audit initial offert", "Supervision 24/7", "Interlocuteur dédié"],
+        "Postes, réseau, serveurs, sauvegardes, MDM, sécurité. Nous déployons, documentons et supervisons l'ensemble, avec un inventaire clair et des procédures que vos équipes peuvent reprendre. Un interlocuteur unique, un SLA précis, des factures prévisibles.",
+      bullets: ["Audit initial offert", "Supervision 24/7", "Tout documenté et transférable"],
     },
   ];
 
@@ -188,16 +190,17 @@ function Services() {
       <div className="mx-auto max-w-[1360px] px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-10 items-end mb-20">
           <div className="lg:col-span-8">
-            <p className="eyebrow mb-6">Nos services · Trois disciplines, une équipe</p>
+            <p className="eyebrow mb-6">Nos services · Une informatique que vous maîtrisez</p>
             <h2 className="font-display font-bold text-4xl lg:text-6xl tracking-[-0.02em] leading-[1.05]">
-              Une équipe qui code, qui déploie<br />
-              et qui reste <span className="text-cyan">quand ça compte</span>.
+              Nous concevons votre système.<br />
+              Vous en gardez <span className="text-cyan">les clés</span>.
             </h2>
           </div>
           <div className="lg:col-span-4">
             <p className="text-brume text-base leading-relaxed">
-              Trois métiers, un seul point de contact. Pas d'agence-monde, pas de
-              sous-traitance opaque : les gens qui vendent sont ceux qui livrent.
+              Trois métiers complémentaires, un seul interlocuteur. À chaque
+              livraison, le code, les accès et la documentation vous reviennent.
+              Vous restez libre de vos choix.
             </p>
           </div>
         </div>
@@ -259,19 +262,19 @@ function Approach() {
   const steps = [
     {
       t: "Écouter",
-      d: "Un atelier, deux heures. On comprend le métier, la contrainte, le calendrier. Pas de deck de vente.",
+      d: "Un atelier de deux heures. Nous comprenons votre métier, votre existant et ce que vous voulez garder sous votre contrôle.",
     },
     {
       t: "Cadrer",
-      d: "Périmètre net, budget net, calendrier net. Vous savez ce que vous achetez avant de signer.",
+      d: "Périmètre, budget et calendrier posés noir sur blanc. Vous savez ce que vous engagez, et ce qui vous appartiendra à la fin, avant de signer.",
     },
     {
       t: "Livrer",
-      d: "Sprints courts, démo hebdo, production incrémentale. Vous voyez le produit grandir en temps réel.",
+      d: "Sprints courts, démonstration chaque semaine, mise en production progressive. Vous suivez le produit qui avance et vous validez à chaque étape.",
     },
     {
-      t: "Rester",
-      d: "Supervision, évolutions, formation continue. On ne disparaît pas au go-live — on commence.",
+      t: "Transmettre",
+      d: "Code, accès, documentation et savoir-faire vous reviennent, vos équipes sont formées. Vous continuez par vous-même ou avec nous, toujours par choix.",
     },
   ];
 
@@ -282,12 +285,13 @@ function Approach() {
           <div className="lg:col-span-4">
             <p className="eyebrow mb-6">Notre approche</p>
             <h2 className="font-display font-bold text-4xl lg:text-5xl leading-[1.05] tracking-[-0.02em]">
-              Quatre gestes.<br />
-              <span className="text-cyan">Zéro théâtre.</span>
+              Quatre étapes.<br />
+              <span className="text-cyan">Vous, aux commandes.</span>
             </h2>
             <p className="mt-8 text-brume leading-relaxed max-w-[38ch]">
-              Une méthode dépouillée, la même depuis le premier projet. Elle tient
-              tenu parce qu'elle ne triche pas — et parce qu'on la répète.
+              La même méthode à chaque projet, du cadrage à la transmission. À la
+              fin, vous tenez un système qui tourne, une équipe qui sait s'en
+              servir et tout ce qu'il faut pour continuer.
             </p>
           </div>
 
@@ -324,13 +328,14 @@ function Manifesto() {
   return (
     <section id="manifeste" className="py-28 lg:py-40">
       <div className="mx-auto max-w-[1100px] px-6 lg:px-10">
-        <p className="eyebrow mb-8">Manifeste</p>
+        <p className="eyebrow mb-8">Notre conviction</p>
         <blockquote className="font-display font-bold text-3xl lg:text-5xl leading-[1.15] tracking-[-0.015em] text-papier">
-          « L'IA n'est pas un produit. C'est un <span className="text-cyan">outil</span> —
-          entre les mains d'une équipe qui sait coder, qui sait déployer, et
-          qui sait revenir demain. Le reste est de la mise en scène. »
+          « Une entreprise devrait pouvoir comprendre, faire évoluer et reprendre
+          son informatique quand elle le décide. Notre métier : vous en donner la{" "}
+          <span className="text-cyan">pleine maîtrise</span>. Du code que vous
+          possédez, une IA sur vos données, des équipes qui savent faire. »
         </blockquote>
-        <p className="mt-10 text-brume">— L'équipe Altered Pixel</p>
+        <p className="mt-10 text-brume">L'équipe Altered Pixel</p>
       </div>
     </section>
   );
@@ -347,12 +352,14 @@ function Contact() {
         <div className="lg:col-span-7">
           <p className="eyebrow mb-6" style={{ color: "var(--marque)" }}>Prendre contact</p>
           <h2 className="font-display font-bold text-4xl lg:text-6xl leading-[1.05] tracking-[-0.02em]">
-            Un projet, un doute, une question ?<br />
-            <span style={{ color: "var(--marque)" }}>Écrivez, on répond en 48h.</span>
+            Un projet, une migration, une question ?<br />
+            <span style={{ color: "var(--marque)" }}>On vous répond sous 48h.</span>
           </h2>
           <p className="mt-8 max-w-[52ch] text-lg leading-relaxed" style={{ color: "#3B5675" }}>
-            Discovery offert d'une heure, sans engagement. On vous dit franchement
-            si votre besoin relève de nous — ou pas.
+            Premier échange d'une heure, offert. Nous regardons votre existant et
+            ce que vous voulez garder sous contrôle, puis nous vous disons
+            clairement comment avancer. Nouvelle maison, et un soin particulier
+            porté à chaque projet que nous engageons.
           </p>
 
           <div className="mt-12 grid sm:grid-cols-2 gap-6 max-w-xl">
@@ -377,7 +384,7 @@ function Contact() {
             className="mt-12 inline-flex items-center gap-3 text-papier font-medium px-7 py-4 rounded-sm hover:opacity-90 transition-opacity"
             style={{ backgroundColor: "var(--marque)" }}
           >
-            Réserver la discovery <span aria-hidden>→</span>
+            Réserver un échange <span aria-hidden>→</span>
           </a>
         </div>
 
@@ -390,7 +397,7 @@ function Contact() {
               seed={91}
               light
               className="w-full h-full"
-              ariaLabel="Trame Altered Pixel — variante papier"
+              ariaLabel="Trame Altered Pixel, variante papier"
             />
           </div>
         </div>
@@ -424,8 +431,8 @@ function Footer() {
         <div className="lg:col-span-5">
           <img src={logo} alt="Altered Pixel" className="h-14 w-auto opacity-95 mb-6" />
           <p className="text-brume max-w-[42ch] leading-relaxed">
-            Logiciels sur-mesure boostés à l'IA, déploiement & formation IA en
-            entreprise, infogérance de votre parc. Basés en France.
+            Développement, IA, infogérance et formation. Une informatique que vous
+            maîtrisez, hébergée et pilotée en France.
           </p>
         </div>
         <div className="lg:col-span-4 grid grid-cols-2 gap-8 text-sm">
@@ -434,7 +441,7 @@ function Footer() {
             <ul className="space-y-2 text-brume">
               <li><a href="#services" className="hover:text-papier">Services</a></li>
               <li><a href="#approche" className="hover:text-papier">Approche</a></li>
-              <li><a href="#manifeste" className="hover:text-papier">Manifeste</a></li>
+              <li><a href="#manifeste" className="hover:text-papier">Conviction</a></li>
               <li><a href="#contact" className="hover:text-papier">Contact</a></li>
             </ul>
           </div>
