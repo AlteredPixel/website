@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PixelField } from "@/components/PixelField";
-import logoAsset from "@/assets/altered-pixel-logo.png.asset.json";
+import logo from "@/assets/logo_white.svg";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -40,7 +40,7 @@ function Nav() {
     <header className="sticky top-0 z-40 backdrop-blur-md bg-encre/80 border-b border-hairline">
       <div className="mx-auto max-w-[1360px] px-6 lg:px-10 h-[72px] flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
-          <img src={logoAsset.url} alt="Altered Pixel" className="h-6 w-auto brightness-0 invert opacity-95" />
+          <img src={logo} alt="Altered Pixel" className="h-24 w-auto opacity-95" />
         </a>
         <nav className="hidden md:flex items-center gap-10 text-sm text-brume">
           <a href="#services" className="hover:text-papier transition-colors">Services</a>
@@ -422,7 +422,7 @@ function Footer() {
     <footer className="bg-encre border-t border-hairline">
       <div className="mx-auto max-w-[1360px] px-6 lg:px-10 py-16 grid lg:grid-cols-12 gap-10">
         <div className="lg:col-span-5">
-          <img src={logoAsset.url} alt="Altered Pixel" className="h-6 w-auto brightness-0 invert opacity-95 mb-6" />
+          <img src={logo} alt="Altered Pixel" className="h-14 w-auto opacity-95 mb-6" />
           <p className="text-brume max-w-[42ch] leading-relaxed">
             Logiciels sur-mesure boostés à l'IA, déploiement & formation IA en
             entreprise, infogérance de votre parc. Basés en France.
