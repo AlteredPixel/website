@@ -3,8 +3,6 @@
 ## Project Overview
 **Altered Pixel** — French B2B software consulting and AI services firm. This is a TanStack Start (full-stack React) marketing site built with and synced to [Lovable](https://lovable.dev).
 
-> **Lovable Integration**: Never force-push, rebase, amend, or squash already-pushed commits. This rewrites history on Lovable's side. Keep the connected branch in a working state at all times — commits sync automatically to the Lovable editor.
-
 ---
 
 ## Commands
@@ -76,6 +74,24 @@ Custom `@utility` classes: `.eyebrow`, `.text-brume`, `.bg-encre`, `.bg-cyan`, `
 Font: **Space Grotesk** (Google Fonts) for both `font-sans` and `font-display`. Dark theme by default.
 
 Use `cn()` from `@/lib/utils` for conditional class merging.
+
+## Language
+
+All code, comments, and documentation should be in English. The marketing site content is in French, but the codebase is English-only.
+
+## Wording
+
+Never use straw-man positioning: do not define anything by opposition to a vague or
+implied "bad other." Avoid "not X but Y", "it's not just… it's…", "this isn't about…
+it's about…", emphatic "real/really/actually/genuinely" implying others are fake, and
+false dichotomies (good option vs. caricatured alternative). State value directly,
+through facts, with no disparaging contrast.
+
+Never use the em dash (—) or the en dash (–), in any context. Replace them with appropriate alternatives:
+- For a break or aside, use a comma, parentheses, or a colon, or split into two sentences.
+- For a range, write "from X to Y" or use "to" (e.g. "2020 to 2026"), not "2020–2026".
+- Never substitute a hyphen (-) flanked by spaces as a stand-in for a dash.
+  Keep the regular hyphen (-) for compound words and normal spelling (e.g. "well-known").
 
 ---
 
