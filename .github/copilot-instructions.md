@@ -1,7 +1,7 @@
 # Copilot Instructions
 
 ## Project Overview
-**Altered Pixel** — French B2B software consulting and AI services firm. This is a TanStack Start (full-stack React) marketing site built with and synced to [Lovable](https://lovable.dev).
+**Altered Pixel** — French B2B software consulting and AI services firm. This is a TanStack Start (full-stack React) marketing site.
 
 ---
 
@@ -100,4 +100,4 @@ Never use the em dash (—) or the en dash (–), in any context. Replace them w
 - **Path alias**: `@/` maps to `src/` — always use it for imports
 - **File naming**: routes and lib = kebab-case; components = PascalCase
 - **No CSS Modules** — all utility-driven Tailwind
-- **Error handling**: Client errors reported via `src/lib/lovable-error-reporting.ts`; SSR errors via `src/lib/error-page.ts`
+- **Error handling**: SSR errors rendered via `src/lib/error-page.ts`
